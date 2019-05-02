@@ -1,0 +1,22 @@
+{
+  "name": "blog-nextjs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.16.4",
+    "next": "^8.1.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "stafrt": "next start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
