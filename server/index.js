@@ -18,6 +18,17 @@ nextApp
         //express code here
         const app = express();
 
+        //get all of the react stuff
+        app.get('*', (req, res) => {
+            return handle(req, res);
+        })
+
         //apply middleware
         provider(app);
-    })
+
+        //get the server listening
+        app.listen(PORT, err => {
+            if (err) throw err;
+            console.log('Express/Next server is firing on all cylinders 🔥');
+        });
+    });
