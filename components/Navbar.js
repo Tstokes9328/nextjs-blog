@@ -27,7 +27,7 @@ export default Navbar;
 //Styled Components
 const NavbarContainer = styled.div`
     width: 100vw;
-    height: 15vh;
+    height: 20vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -37,7 +37,7 @@ const NavbarContainer = styled.div`
 
 const NavbarLogo = styled.div`
     width: 10%;
-    height: 40%;
+    height: 30%;
     background: #F56361;
     display: flex;
     flex-direction: column;
