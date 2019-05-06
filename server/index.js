@@ -4,7 +4,7 @@ const next = require('next');
 const PORT = process.env.PORT || 3000;
 const dev = process.env.NODE_DEV !== 'production';
 
-//middleware and routes
+//middleware provider
 const { provider } = require('./middleware/provider');
 
 //NextJS configuration
@@ -21,7 +21,7 @@ nextApp
         //get all of the react stuff
         app.get('*', (req, res) => {
             return handle(req, res);
-        })
+        });
 
         //apply middleware
         provider(app);
