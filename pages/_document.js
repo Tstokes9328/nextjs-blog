@@ -11,7 +11,7 @@ class MyDocument extends Document {
         const styleTags = sheet.getStyleElement();
         //pass styleTags as props
         return {...page, styleTags};
-    }
+    };
 
     render() {
         return (
@@ -21,6 +21,7 @@ class MyDocument extends Document {
                     <meta name="description" content="A blog app created with NextJS" />
                     <meta name="keywords" content="nextjs next seo react blog hacker news hooks" />
                     <meta name="author" content="Tayte Stokes" />
+                    <link rel="stylesheet" type="text/css" href="../static/reset.css" />
                     {/* Styled Components */}
                     {this.props.styleTags}
                 </Head>
