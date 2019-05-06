@@ -11,17 +11,9 @@ const Index = () => (
         <Head>
             <title>Home</title>
         </Head>
-        <HomeContainer>
-            
-        </HomeContainer>
     </Layout>
 )
 
 export default Index;
 
 //Styled Components
-const HomeContainer = styled.div`
-    width: 100vw;
-    height: 100vh;
-    background: black;
-`
