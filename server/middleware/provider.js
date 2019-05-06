@@ -1,4 +1,3 @@
-const express = require('express');
 const bodyParser = require('body-parser');
 
 //the function that will provide middleware to our server

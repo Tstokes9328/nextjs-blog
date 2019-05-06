@@ -1,7 +1,10 @@
+//Components
+import Layout from '../components/Layout';
+
 const Index = () => (
-    <div>
+    <Layout>
         <h1>My really really cool app to come</h1>
-    </div>
+    </Layout>
 )
 
 export default Index;

@@ -18,13 +18,13 @@ nextApp
         //express code here
         const app = express();
 
+        //apply middleware
+        provider(app);
+
         //get all of the react stuff
         app.get('*', (req, res) => {
             return handle(req, res);
         });
-
-        //apply middleware
-        provider(app);
 
         //get the server listening
         app.listen(PORT, err => {
