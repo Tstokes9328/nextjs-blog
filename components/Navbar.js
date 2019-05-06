@@ -62,8 +62,8 @@ const NavbarListContainer = styled.ul`
         text-decoration: none;
         font-size: 16px;
         &:hover {
-        color: #CFCFD0;
-        cursor: pointer;
+            color: #CFCFD0;
+            cursor: pointer;
         }
     }
 `
