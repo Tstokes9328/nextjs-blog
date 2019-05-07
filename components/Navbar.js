@@ -12,9 +12,6 @@ const Navbar = () => (
             <Link href="/">
                 <a>Home</a>
             </Link>
-            <Link href="/hacks">
-                <a>Hacks</a>
-            </Link>
             <Link href="/news">
                 <a>News</a>
             </Link>
@@ -50,7 +47,7 @@ const NavbarLogo = styled.div`
 `
 
 const NavbarListContainer = styled.ul`
-    width: 12%;
+    width: 8%;
     height: 40%;
     display: flex;
     flex-direction: row;

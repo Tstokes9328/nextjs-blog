@@ -1,6 +1,5 @@
 //Packages
 import Head from 'next/head';
-import styled from 'styled-components';
 
 //Components
 import Layout from '../components/Layout';
@@ -15,5 +14,3 @@ const Index = () => (
 )
 
 export default Index;
-
-//Styled Components
