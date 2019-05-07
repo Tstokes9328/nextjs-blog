@@ -14,9 +14,12 @@ const News = props => {
     //functions
     const handleTextChange = event => {
         setQuery(event.target.value);
+        if(event.key === 'Enter'){
+            handleSubmit();
+        }
     };
 
-    const handleSubmit = event => {
+    const handleSubmit = () => {
         Router.push(`/news/?searchTerm=${query}`);
     };
 
@@ -29,8 +32,7 @@ const News = props => {
             </Head>
             <NewsContainer>
                 <SearchContainer>
-                    <input type="text" placeholder="Search..." onChange={handleTextChange} />
-                    <img id="search" src={'../static/search.svg'} onClick={handleSubmit} />
+                    <input type="text" placeholder="Search..." onKeyUp={handleTextChange} />
                 </SearchContainer>
                 <StoriesContainer>
                     {
@@ -78,7 +80,7 @@ const NewsContainer = styled.div`
 
 const SearchContainer = styled.div`
     width: 65%;
-    height: 10vh;
+    height: 5vh;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -86,11 +88,13 @@ const SearchContainer = styled.div`
     input {
         font-family: 'Courier New', Courier, monospace;
         height: 30%;
-        width: 20%;
+        width: auto;
         border: none;
-        border-bottom: 1px solid #222324;
         outline: none;
         font-size: 16px;
+        &:focus {
+            border-bottom: 1px solid #F56361;
+        }
     }
     img {
         height: 75px;
